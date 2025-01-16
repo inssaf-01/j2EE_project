@@ -5,17 +5,14 @@ On commence par :
 - Le **Config Server**
 - **Eureka**
 - **Zuul**
+- Les microservices **Commandes** et **Produits** sont configurés après le reste.
 
   ### Repartition des taches
   -Manal Kerroumi:
      +Euureka / microservice de produit / Microservice de Commande
   -Inssaf Bellamkadem :
-      = Zuul / Client UI / Config Server 
+     +Zuul / Client UI / Config Server 
   
-  
-
-### Commandes et produits
-Les microservices **Commandes** et **Produits** sont configurés après le reste.
 
 ### Difficultés rencontrées
 - Compatibilité des versions, surtout avec **Zuul**.
@@ -36,7 +33,7 @@ Les microservices **Commandes** et **Produits** sont configurés après le reste
   - Microservice **Produits** : `9001`.
 
 ### Zuul
-Au lieu d'accéder aux différents microservices avec des ports variés, **Zuul** permet :
+Le **Zuul** permet :
 - La communication entre microservices en utilisant un **proxy**.
 - La centralisation du client pour unifier les entrées HTTP via un port unique (`9004`).
 
