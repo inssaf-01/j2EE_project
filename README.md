@@ -6,12 +6,21 @@ On commence par :
 - **Eureka**
 - **Zuul**
 
+  ### Repartition des taches
+  -Manal Kerroumi:
+     +Euureka / microservice de produit / Microservice de Commande
+  -Inssaf Bellamkadem :
+      = Zuul / Client UI / Config Server 
+  
+  
+
 ### Commandes et produits
 Les microservices **Commandes** et **Produits** sont configurés après le reste.
 
 ### Difficultés rencontrées
 - Compatibilité des versions, surtout avec **Zuul**.
 - Problèmes liés au `pom.xml` et à l'exécution.
+- La communication entre les microservices
 
 ### POM et configuration
 - Base de données utilisée : **H2**.
@@ -44,5 +53,8 @@ Au lieu d'accéder aux différents microservices avec des ports variés, **Zuul*
 
 ### Feign
 Feign est utilisé comme client HTTP simplifié pour appeler d'autres microservices.
+
+
+
 
 
